@@ -1,0 +1,18 @@
+-
+  name: NovusContentRestore Client Project
+  hosts: '{{ hosts }}' 
+  tasks:
+    -
+      name: Create new versioned directory
+      file:
+        path: /appserver/standalone/NovusContentRestore-{{new_version}}/
+        state: directory
+      register: created_directory
+    -
+      name: copy files from Nas
+      shell: "cp /tools/novusRelease/NovusContentRestore/{{new_version}}/novus-content-restore-{{new_version}}.jar /appserver/standalone/NovusContentRestore-{{new_version}}/ && cp /appserver/standalone/content-restorer.properties /appserver/standalone/NovusContentRestore-{{new_version}}/"
+      register: copyFiles
+    -
+      name: move older version directory to Backup
+      shell: "mv /appserver/standalone/NovusContentRestore-'{{old_version}}'/ /appserver/standalone/NovusContentRestore-'{{old_version}}'_X/"
+    - debug: msg="{{ copyFiles.stdout }}"
