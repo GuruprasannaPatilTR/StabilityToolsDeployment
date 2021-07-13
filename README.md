@@ -1,6 +1,6 @@
 # StabilityToolsDeployment
 
-Above files are already present in deployment server. Any changes in the code will be updated. If it is not present you can alway use this GIT repository for downloading ZIP file or Clone it.
+Above files are already present in deployment server. Any changes in the code will be updated. If it is not present you can always use this GIT repository for downloading ZIP file or Clone it.
 
 # Usage:
 
