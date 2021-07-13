@@ -1,0 +1,20 @@
+-
+  name: NovusAudit Project
+  hosts: '{{ hosts }}' 
+  tasks:
+    -
+      name: create directory
+      file:
+        path: /appserver/standalone/NovusAudit-{{new_version}}/
+        state: directory
+      register: created_directory
+    -
+      name: Unarchive a file that is already on the remote machine
+      unarchive:
+        src: /tools/novusRelease/NovusAudit/{{new_version}}/NovusAudit-{{new_version}}.tar
+        dest: /appserver/standalone/NovusAudit-{{new_version}}/
+        mode: 0755
+        remote_src: yes
+    -
+      name: move older directory
+      shell: "mv /appserver/standalone/NovusAudit-'{{old_version}}'/ /appserver/standalone/NovusAudit-'{{old_version}}'_X/"

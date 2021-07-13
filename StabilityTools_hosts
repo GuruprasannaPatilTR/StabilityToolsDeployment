@@ -1,0 +1,25 @@
+[StabilityTools_Client]
+c459ktj ansible_host=c459ktj.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c590qma ansible_host=c590qma.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c583ngg ansible_host=c583ngg.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c190xnh ansible_host=c190xnh.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c190xnh ansible_host=c190xnh.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c906akt ansible_host=c906akt.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c866mqz ansible_host=c866mqz.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c906akt ansible_host=c906akt.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c391wyy ansible_host=c391wyy.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+
+
+[StabilityTools_Prod]
+c144jvn ansible_host=c144jvn.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c709mxx ansible_host=c709mxx.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c296den ansible_host=c296den.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c430hhq ansible_host=c430hhq.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c096qvv ansible_host=c096qvv.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c926zay ansible_host=c926zay.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c593yex ansible_host=c593yex.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c410cfp ansible_host=c410cfp.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c983cvh ansible_host=c983cvh.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c335sqf ansible_host=c335sqf.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+c324mcs ansible_host=c324mcs.int.thomsonreuters.com ansible_ssh_user=asadmin ansible_ssh_pass=east
+

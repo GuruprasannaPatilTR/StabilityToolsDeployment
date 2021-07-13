@@ -1,0 +1,20 @@
+-
+  name: NovusCCIRestore Client Project
+  hosts: '{{ hosts }}'
+  tasks:
+    -
+      name: Create new versioned directory
+      file:
+        path: /appserver/standalone/NovusCCIRestore_{{new_version}}/
+        state: directory
+      register: created_directory
+    -
+      name: Unarchive NovusCCIRestore TAR file at new version
+      unarchive:
+        src: /tools/novusRelease/PlatformSearchMicroServices/NovusCCIRestore/{{new_version}}/NovusCCIRestore.tar
+        dest: /appserver/standalone/NovusCCIRestore_{{new_version}}/
+        mode: 0755
+        remote_src: yes
+    -
+      name: move older version directory to Backup
+      shell: "mv /appserver/standalone/NovusCCIRestore_'{{old_version}}'/ /appserver/standalone/NovusCCIRestore_'{{old_version}}'_X/"
