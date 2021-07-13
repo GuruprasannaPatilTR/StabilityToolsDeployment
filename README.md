@@ -2,6 +2,9 @@
 
 Above files are already present in deployment server. Any changes in the code will be updated. If it is not present you can always use this GIT repository for downloading ZIP file or Clone it.
 
+Below Steps explains how to deploy new versions for various Tools.
+
+
 # Usage:
 
 - Login to c129hdb.int.thomsonreuters with your M account and become root user.
