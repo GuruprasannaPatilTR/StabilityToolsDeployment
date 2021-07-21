@@ -8,7 +8,7 @@ Below Steps explains how to deploy new versions for various Tools.
 # Usage:
 
 - Login to c129hdb.int.thomsonreuters with your M account and become root user.
-- cd /appserver/Stability_Tools.
+- cd /appserver/Stability_Tools
 - Various Use case based on the Environment and Tools are as below.
 
 # Client:
